@@ -1,0 +1,16 @@
+{{ define "main" }}
+    <main aria-role="main">
+        <div class="homepage-content">
+            {{.Content}}
+
+            <!-- Ranges through content/posts/*.md -->
+            {{ range (where .Site.RegularPages "Section" "posts") }}
+                <li>
+                    <a href="{{.Permalink}}">
+                        <h3>{{.Title}}</h3>
+                        <span>{{.Date.Format "Jan 2, 2006"}}</span>
+                </li>
+            {{ end }}
+        </div>
+    </main>
+{{ end }}
