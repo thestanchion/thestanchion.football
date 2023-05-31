@@ -1,4 +1,4 @@
 baseURL = 'http://thestanchion.football/'
 languageCode = 'en-gb'
 title = 'The Stanchion'
-theme = 'ananke'
+theme = 'theStanchionV1'
