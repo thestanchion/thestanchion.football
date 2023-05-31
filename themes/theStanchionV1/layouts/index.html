@@ -1,16 +1,17 @@
 {{ define "main" }}
-    <main aria-role="main">
-        <div class="homepage-content">
-            {{.Content}}
+    <main aria-role="main"class="post-list">
+        {{.Content}}
 
+        <ul class="post-list__list">
             <!-- Ranges through content/posts/*.md -->
             {{ range (where .Site.RegularPages "Section" "posts") }}
-                <li>
-                    <a href="{{.Permalink}}">
-                        <h3>{{.Title}}</h3>
-                        <span>{{.Date.Format "Jan 2, 2006"}}</span>
+                <li class="post-list__post" style="background-image: url({{ .Params.LeadPhoto }})">
+                    <a href="{{.Permalink}}" class="post-list__link">
+                        <h3 class="post-list__post-title">{{.Title}}</h3>
+                        <span class="post-list__post-date">{{.Date.Format "Jan 2, 2006"}}</span>
+                    </a>
                 </li>
             {{ end }}
-        </div>
+        </ul>
     </main>
 {{ end }}

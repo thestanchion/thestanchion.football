@@ -14,4 +14,10 @@
     {{ else }}
       <meta name="robots" content="noindex, nofollow">
     {{ end }}
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i,700i,800i,900i|Source+Serif+Pro:400,700" rel="stylesheet">
+
+    {{ $sass := resources.Get "scss/stanchion.scss" }}
+    {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 </head>
