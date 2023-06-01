@@ -1,9 +1,10 @@
 ---
-title: "What Does Anthony Martial Actually Offer?"
-date: 2023-05-29T08:42:33+01:00
-draft: true
-summary: This is a summary
-leadPhoto: https://ik.imagekit.io/stanchion/martial.jpg?tr=w-500,h-250,,c-at_least
+title: What Does Anthony Martial Actually Offer?
+date: 2021-02-10T08:42:33+01:00
+draft: false
+summary: Poor finishing, a major lack of effort and desire, I don't understand why the United fanbase has such big affection for Tony Marshall.
+leadPhoto: https://ik.imagekit.io/stanchion/martial.jpg
+leadPhotoSource: liverpoolecho.co.uk
 ---
 
 When Manchester United slapped £50 odd million on the table for 19 year old Anthony Martial on the last day of the 2015 summer transfer window my reaction was not an excited one. Normally when your club splashes that sort of cash you've heard of the player before. When you spend that sort of money on a teenager, normally he's being spoken about regularly, is well known to the average football fan and is being linked with all sorts of big clubs.

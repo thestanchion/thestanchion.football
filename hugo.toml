@@ -1,4 +1,4 @@
-baseURL = 'http://thestanchion.football/'
+baseURL = 'https://fabulous-crumble-8d0e72.netlify.app/'
 languageCode = 'en-gb'
 title = 'The Stanchion'
 theme = 'theStanchionV1'
