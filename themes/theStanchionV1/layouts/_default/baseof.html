@@ -2,8 +2,16 @@
 <html>
     {{- partial "head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
+        {{ if .IsPage }}
+            {{- partial "header-single.html" . -}}
+        {{ else }}
+            {{- partial "header.html" . -}}
+        {{ end }}
+
+        {{- partial "navigation.html" . -}}
+
         {{- block "main" . }}{{- end }}
+
         {{- partial "footer.html" . -}}
 
         <script src="/js/nav.js"></script>

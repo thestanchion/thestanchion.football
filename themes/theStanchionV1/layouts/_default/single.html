@@ -1,40 +1,31 @@
 {{ define "main" }}
 <section id="main">
-  <h1 id="title">{{ .Title }}</h1>
-  <div>
-        <article id="content">
-           {{ .Content }}
-        </article>
+    <div class="hero" style="background-image: url({{ .Params.LeadPhoto }}?tr=w-500,h-250,,c-at_least);">
+        <h1 class="hero__title">{{ .Title }}</h1>
+        <h4 class="hero__date"> {{ .Date.Format "Jan 2, 2006" }} </h4>
+    </div>
+
+    <div class="post-content">
+        <div class="post-content__subtitle">
+            {{ .Summary }}
+        </div>
+        {{ .Content }}
+    </div>
   </div>
 </section>
-<aside id="meta">
-    <div>
-    <section>
-      <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-      <h5 id="wordcount"> {{ .WordCount }} Words </h5>
-    </section>
-    {{ with .Params.topics }}
-    <ul id="topics">
-      {{ range . }}
-        <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
-      {{ end }}
-    </ul>
+
+<nav class="more-posts">
+    {{ with .PrevInSection }}
+        <a class="more-posts__link more-posts__link--previous" href="{{.Permalink}}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><g fill="#FFF"><g><path d="M15.28 7.28c.293-.293.293-.767 0-1.06-.293-.293-.767-.293-1.06 0l-5 5c-.293.293-.293.767 0 1.06l5 5c.293.293.767.293 1.06 0 .293-.293.293-.767 0-1.06l-4.47-4.47 4.47-4.47z" transform="translate(-120.000000, -127.000000) translate(120.000000, 127.000000)"/></g></g></g></svg>
+            {{.Title}}
+        </a>
     {{ end }}
-    {{ with .Params.tags }}
-    <ul id="tags">
-      {{ range . }}
-        <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
-      {{ end }}
-    </ul>
+    {{ with .NextInSection }}
+        <a class="more-posts__link more-posts__link--next" href="{{.Permalink}}">
+            {{.Title}}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><g fill="#FFF"><g><g><path d="M9.22 16.22c-.293.293-.293.767 0 1.06.293.293.767.293 1.06 0l5-5c.293-.293.293-.767 0-1.06l-5-5c-.293-.293-.767-.293-1.06 0-.293.293-.293.767 0 1.06l4.47 4.47-4.47 4.47z" transform="translate(-208.000000, -127.000000) translate(120.000000, 127.000000) translate(88.000000, 0.000000)"/></g></g></g></g></svg>
+        </a>
     {{ end }}
-    </div>
-    <div>
-        {{ with .PrevInSection }}
-          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-        {{ with .NextInSection }}
-          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-    </div>
-</aside>
+</nav>
 {{ end }}
