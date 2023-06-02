@@ -1,0 +1,56 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+    padding: 0 10%;
+    background-color: $stanchion-red;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    &__title {
+        font-size: 8rem;
+        margin-bottom: 5rem;
+        color: $white;
+    }
+
+    &__date {
+        margin: 0 0 1rem;
+        padding: 0.5rem 0 0;
+        font-family: "Montserrat", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        font-style: italic;
+        color: $white;
+        text-transform: uppercase;
+        border-top: 0.4rem solid #fff;
+    }
+
+    @media (max-width: $break-tablet) {
+
+        &__title {
+            font-size: 3.8rem;
+        }
+
+        &__date {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (max-width: $break-mobile-wide) {
+
+        &__title {
+            font-size: 2.6rem;
+        }
+
+        &__date {
+            font-size: 1.2rem;
+        }
+    }
+}
