@@ -359,9 +359,6 @@ th {
 * {
   box-sizing: border-box; }
 
-body {
-  margin-bottom: 4rem; }
-
 a {
   color: #d90815;
   text-decoration: none;
@@ -601,6 +598,120 @@ h6 {
     .site-header--single .site-header__outline-text {
       -webkit-text-stroke-color: #ffffff; }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-family: "Montserrat", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  background-color: #000000;
+  color: #ffffff; }
+  .footer a {
+    color: #ffffff; }
+  .footer a:hover {
+    color: #d90815; }
+  .footer a + a {
+    margin-left: 3rem; }
+  .footer svg {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem; }
+
+.post-list {
+  margin: 0 2rem; }
+  .post-list__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20rem;
+    grid-auto-rows: 20rem;
+    grid-gap: 2rem;
+    margin: 0;
+    padding: 0; }
+  .post-list__post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    background-color: #d90815;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    transition: background-color ease .2s; }
+    .post-list__post:first-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+      .post-list__post:first-child .post-list__post-title {
+        font-size: 3rem; }
+    .post-list__post:nth-child(2) {
+      grid-row-start: 1;
+      grid-row-end: 3; }
+      .post-list__post:nth-child(2) .post-list__post-title {
+        font-size: 2.2rem; }
+    .post-list__post:hover {
+      background-color: transparent; }
+      .post-list__post:hover .post-list__link {
+        color: #ffffff; }
+  .post-list__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    color: #ffffff; }
+  .post-list__post-title {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2; }
+  .post-list__post-date {
+    text-transform: uppercase;
+    padding: 0.5rem 0 0;
+    font-family: "Montserrat", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.4rem;
+    text-align: left; }
+  @media (min-width: 1400px) {
+    .post-list__list {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  @media (max-width: 1024px) {
+    .post-list__list {
+      grid-template-columns: 1fr 1fr; }
+    .post-list__post:nth-child(2) {
+      grid-row-start: unset;
+      grid-row-end: unset; } }
+  @media (max-width: 840px) {
+    .post-list {
+      margin: 0 1.4rem; }
+      .post-list__list {
+        grid-template-rows: 14rem;
+        grid-auto-rows: 14rem;
+        grid-gap: 1.4rem; }
+      .post-list__link {
+        padding: 1.4rem; }
+      .post-list__post-title {
+        font-size: 1.4rem;
+        font-weight: 800; }
+      .post-list__post-date {
+        font-size: 1rem;
+        font-weight: 500; }
+      .post-list__post:first-child .post-list__post-title {
+        font-size: 2rem; }
+      .post-list__post:nth-child(2) .post-list__post-title {
+        font-size: 1.4rem; } }
+  @media (max-width: 520px) {
+    .post-list__list {
+      grid-template-columns: 1fr;
+      grid-template-rows: 10rem;
+      grid-auto-rows: 10rem; }
+    .post-list__post:first-child {
+      grid-column-end: 1; } }
 .hero {
   display: flex;
   flex-direction: column;
@@ -698,96 +809,3 @@ h6 {
   @media (max-width: 520px) {
     .more-posts svg {
       display: none; } }
-.post-list {
-  margin: 0 2rem; }
-  .post-list__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20rem;
-    grid-auto-rows: 20rem;
-    grid-gap: 2rem;
-    margin: 0;
-    padding: 0; }
-  .post-list__post {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-    background-color: #d90815;
-    background-blend-mode: multiply;
-    background-position: center;
-    background-size: cover;
-    transition: background-color ease .2s; }
-    .post-list__post:first-child {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 3; }
-      .post-list__post:first-child .post-list__post-title {
-        font-size: 3rem; }
-    .post-list__post:nth-child(2) {
-      grid-row-start: 1;
-      grid-row-end: 3; }
-      .post-list__post:nth-child(2) .post-list__post-title {
-        font-size: 2.2rem; }
-    .post-list__post:hover {
-      background-color: transparent; }
-      .post-list__post:hover .post-list__link {
-        color: #ffffff; }
-  .post-list__link {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    color: #ffffff; }
-  .post-list__post-title {
-    margin: 0;
-    font-size: 2rem;
-    line-height: 1.2; }
-  .post-list__post-date {
-    text-transform: uppercase;
-    padding: 0.5rem 0 0;
-    font-family: "Montserrat", Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 1.4rem;
-    text-align: left; }
-  @media (min-width: 1400px) {
-    .post-list__list {
-      grid-template-columns: 1fr 1fr 1fr 1fr; } }
-  @media (max-width: 1024px) {
-    .post-list__list {
-      grid-template-columns: 1fr 1fr; }
-    .post-list__post:nth-child(2) {
-      grid-row-start: unset;
-      grid-row-end: unset; } }
-  @media (max-width: 840px) {
-    .post-list {
-      margin: 0 1.4rem; }
-      .post-list__list {
-        grid-template-rows: 14rem;
-        grid-auto-rows: 14rem;
-        grid-gap: 1.4rem; }
-      .post-list__link {
-        padding: 1.4rem; }
-      .post-list__post-title {
-        font-size: 1.4rem;
-        font-weight: 800; }
-      .post-list__post-date {
-        font-size: 1rem;
-        font-weight: 500; }
-      .post-list__post:first-child .post-list__post-title {
-        font-size: 2rem; }
-      .post-list__post:nth-child(2) .post-list__post-title {
-        font-size: 1.4rem; } }
-  @media (max-width: 520px) {
-    .post-list__list {
-      grid-template-columns: 1fr;
-      grid-template-rows: 10rem;
-      grid-auto-rows: 10rem; }
-    .post-list__post:first-child {
-      grid-column-end: 1; } }

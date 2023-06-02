@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-family: "Montserrat", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: $black;
+    color: $white;
+
+    a {
+        color: $white;
+    }
+
+    a:hover {
+        color: $stanchion-red;
+    }
+
+    a+a {
+        margin-left: 3rem;
+    }
+
+    svg {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+    }
+}

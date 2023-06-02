@@ -6,8 +6,9 @@
 
 @import 'layout/navigation';
 @import 'layout/site-header';
-@import 'layout/hero';
-@import 'layout/post-content';
-@import 'layout/more-posts';
+@import 'layout/footer';
 
 @import 'components/post-list';
+@import 'components/hero';
+@import 'components/post-content';
+@import 'components/more-posts';
