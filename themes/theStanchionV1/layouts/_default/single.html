@@ -5,6 +5,8 @@
         <h4 class="hero__date"> {{ .Date.Format "Jan 2, 2006" }} </h4>
     </div>
 
+    {{- partial "header.html" . -}}
+
     <div class="post-content">
         <div class="post-content__subtitle">
             {{ .Summary }}
