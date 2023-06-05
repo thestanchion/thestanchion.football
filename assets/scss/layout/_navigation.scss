@@ -135,19 +135,6 @@
         }
     }
 
-    @media (max-width: 800px) {
-
-        &__toggle {
-            width:5rem;
-            height: 5rem
-
-            svg {
-                top: 2rem;
-                right: 1rem
-            }
-        }
-    }
-
     @media (max-width: $break-mobile-wide) {
         padding-top: 8rem;
     }
