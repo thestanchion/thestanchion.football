@@ -728,9 +728,15 @@ h6 {
   background-size: cover;
   text-align: center; }
   .hero__title {
-    font-size: 8rem;
     margin-bottom: 5rem;
+    font-size: 8rem;
     color: #ffffff; }
+    .hero__title--page {
+      display: block;
+      margin-bottom: 4rem;
+      font-size: 4rem;
+      color: #000000;
+      text-align: center; }
   .hero__date {
     margin: 0 0 1rem;
     padding: 0.5rem 0 0;
@@ -773,6 +779,10 @@ h6 {
         line-height: 1.6; } }
   .post-content h2 {
     font-size: 1.8rem; }
+  .post-content h3 {
+    font-size: 1.6rem; }
+  .post-content h4 {
+    font-size: 1.4rem; }
 
 .more-posts {
   display: flex;

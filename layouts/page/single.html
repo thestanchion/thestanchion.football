@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+{{- partial "header.html" . -}}
+
+<section id="main page">
+    <h1 class="hero__title hero__title--page">{{ .Title }}</h1>
+
+    <div class="post-content">
+        <div class="post-content__subtitle">
+            {{ .Summary }}
+        </div>
+        {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<nav class="more-posts">
+    {{ with .PrevInSection }}
+        <a class="more-posts__link more-posts__link--previous" href="{{.Permalink}}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><g fill="#FFF"><g><path d="M15.28 7.28c.293-.293.293-.767 0-1.06-.293-.293-.767-.293-1.06 0l-5 5c-.293.293-.293.767 0 1.06l5 5c.293.293.767.293 1.06 0 .293-.293.293-.767 0-1.06l-4.47-4.47 4.47-4.47z" transform="translate(-120.000000, -127.000000) translate(120.000000, 127.000000)"/></g></g></g></svg>
+            {{.Title}}
+        </a>
+    {{ end }}
+    {{ with .NextInSection }}
+        <a class="more-posts__link more-posts__link--next" href="{{.Permalink}}">
+            {{.Title}}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><g fill="#FFF"><g><g><path d="M9.22 16.22c-.293.293-.293.767 0 1.06.293.293.767.293 1.06 0l5-5c.293-.293.293-.767 0-1.06l-5-5c-.293-.293-.767-.293-1.06 0-.293.293-.293.767 0 1.06l4.47 4.47-4.47 4.47z" transform="translate(-208.000000, -127.000000) translate(120.000000, 127.000000) translate(88.000000, 0.000000)"/></g></g></g></g></svg>
+        </a>
+    {{ end }}
+</nav>
+{{ end }}
