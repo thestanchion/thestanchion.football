@@ -621,7 +621,7 @@ h6 {
     height: 1rem; }
 
 .post-list {
-  margin: 0 2rem; }
+  margin: 0 2rem 4rem; }
   .post-list__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -689,7 +689,7 @@ h6 {
       grid-row-end: unset; } }
   @media (max-width: 840px) {
     .post-list {
-      margin: 0 1.4rem; }
+      margin: 0 1.4rem 3rem; }
       .post-list__list {
         grid-template-rows: 14rem;
         grid-auto-rows: 14rem;
@@ -810,5 +810,7 @@ h6 {
     .more-posts__link {
       font-size: 1rem; } }
   @media (max-width: 520px) {
+    .more-posts__link {
+      width: calc(50% - 1rem); }
     .more-posts svg {
       display: none; } }

@@ -52,6 +52,10 @@
 
     @media (max-width: $break-mobile-wide) {
 
+        &__link {
+            width: calc(50% - 1rem);
+        }
+
         svg {
             display: none;
         }
