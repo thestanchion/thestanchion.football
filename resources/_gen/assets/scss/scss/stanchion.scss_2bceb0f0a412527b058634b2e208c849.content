@@ -558,12 +558,6 @@ h6 {
     .nav__toggle.active path:nth-child(3) {
       transform: rotate(-45deg);
       transform-origin: 0 100%; }
-  @media (max-width: 800px) {
-    .nav__toggle {
-      width: 5rem;
-      height: 5rem svg;
-        height-top: 2rem;
-        height-right: 1rem; } }
   @media (max-width: 520px) {
     .nav {
       padding-top: 8rem; } }
