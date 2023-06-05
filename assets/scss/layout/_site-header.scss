@@ -45,4 +45,11 @@
             -webkit-text-stroke-color: $white;
         }
     }
+
+    @media (max-width: $break-mobile-wide) {
+
+        &__logo {
+            width: 2.8rem;
+        }
+    }
 }

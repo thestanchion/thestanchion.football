@@ -463,8 +463,10 @@ h6 {
 
 @media (max-width: 520px) {
   body {
-    font-size: 1.4rem;
-    line-height: 1.6; } }
+    font-size: 1.6rem;
+    line-height: 1.6; }
+  .heading--site {
+    font-size: 2rem; } }
 
 .nav {
   position: fixed;
@@ -537,7 +539,7 @@ h6 {
     .nav__toggle svg {
       position: absolute;
       top: 3.2rem;
-      right: 2rem;
+      right: 2.4rem;
       width: 3rem;
       padding: 0 .3rem; }
     .nav__toggle path {
@@ -562,6 +564,9 @@ h6 {
       height: 5rem svg;
         height-top: 2rem;
         height-right: 1rem; } }
+  @media (max-width: 520px) {
+    .nav {
+      padding-top: 8rem; } }
   @media (max-width: 400px) {
     .nav {
       width: 100vw;
@@ -597,7 +602,9 @@ h6 {
       color: #ffffff; }
     .site-header--single .site-header__outline-text {
       -webkit-text-stroke-color: #ffffff; }
-
+  @media (max-width: 520px) {
+    .site-header__logo {
+      width: 2.8rem; } }
 .footer {
   display: flex;
   justify-content: space-between;
@@ -720,7 +727,6 @@ h6 {
   height: 100vh;
   width: 100%;
   margin-top: -8rem;
-  margin-bottom: 4rem;
   padding: 0 10%;
   background-color: #d90815;
   background-blend-mode: multiply;
@@ -771,6 +777,9 @@ h6 {
       .post-content__subtitle {
         font-size: 1.6rem;
         line-height: 1.6; } }
+  .post-content h2 {
+    font-size: 1.8rem; }
+
 .more-posts {
   display: flex;
   width: 100vw;
