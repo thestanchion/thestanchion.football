@@ -14,9 +14,17 @@
     text-align: center;
 
     &__title {
-        font-size: 8rem;
         margin-bottom: 5rem;
+        font-size: 8rem;
         color: $white;
+
+        &--page {
+            display: block;
+            margin-bottom: 4rem;
+            font-size: 4rem;
+            color: $black;
+            text-align: center;
+        }
     }
 
     &__date {
