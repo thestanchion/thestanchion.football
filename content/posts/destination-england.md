@@ -1,12 +1,15 @@
 ---
 title: 'Destination: England?'
-date: 2013-01-15T10:00:36.000+00:00
+date: '2013-01-15T10:00:36.000Z'
 categories: premier-league
-leadPhoto: https://ik.imagekit.io/stanchion/mourinho.jpg
-summary: If you believe what you read in the papers, both Jose Mourinho and Pep Guardiola could soon find themselves in Premier League dugouts.
+leadPhoto: 'https://ik.imagekit.io/stanchion/mourinho.jpg'
+summary: >
+  If you believe what you read in the papers, both Jose Mourinho and Pep
+  Guardiola could soon find themselves in Premier League dugouts
 leadPhotoSource: footplus.tn
 draft: false
 ---
+
 Sunday’s papers stated that a deal to take Guardiola to Man City in the summer was 100% done, while Jose Mourinho has never hidden the fact that he would love to return to the England one day. With Chelsea in need of a new permanent manager and Mourinho’s Real stuttering this season, he may well find himself back at his former club some time soon.
 
 It’s pretty exciting to think that two of best managers in world football could soon both be a weekly fixture here in the English game, but I don’t know if City and Chelsea the best places they could go.

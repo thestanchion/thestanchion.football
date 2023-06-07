@@ -1,0 +1,24 @@
+{
+  "name": "the-stanchion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thestanchion/thestanchion.football.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thestanchion/thestanchion.football/issues"
+  },
+  "homepage": "https://github.com/thestanchion/thestanchion.football#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.16",
+    "tinacms": "^1.5.8"
+  }
+}
