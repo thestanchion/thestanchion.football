@@ -720,7 +720,6 @@ h6 {
   justify-content: center;
   height: 100vh;
   width: 100%;
-  margin-top: -8rem;
   padding: 0 10%;
   background-color: #d90815;
   background-blend-mode: multiply;
