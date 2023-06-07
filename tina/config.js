@@ -26,6 +26,12 @@ export default defineConfig({
         path: "content/posts",
         fields: [
             {
+                type: "boolean",
+                name: "draft",
+                label: "Is Draft",
+                isBody: false
+            },
+            {
                 type: "string",
                 name: "title",
                 label: "Title",
