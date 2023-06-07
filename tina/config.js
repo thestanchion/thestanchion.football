@@ -33,6 +33,13 @@ export default defineConfig({
                 required: true,
             },
             {
+                type: "datetime",
+                name: "date",
+                label: "Publish Date",
+                isBody: false,
+                required: true
+            },
+            {
                 type: "rich-text",
                 name: "summary",
                 label: "Summary",
